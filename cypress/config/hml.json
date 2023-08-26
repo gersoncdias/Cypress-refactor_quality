@@ -1,0 +1,21 @@
+{
+  "env":{
+    "fullname"="John Doe",
+    "firstName"="John",
+    "lastName"="Doe",
+    "inputEmail"="john.doe@qualahoo.com.br",
+    "icorrectEmail"="john.does@qualit",
+    "inputPassword"="gersonQA",
+    "incorrectPassword"="passwordIncorrect@123{enter}",
+    "inputDay"="9",
+    "selectMonth"="7",
+    "selectYear"="1982",
+    "company"="Digital Quality",
+    "adresscompany"="Sunset Boulevard",
+    "country"="United States",
+    "State"="California",
+    "city"="Anytown",
+    "zipCzde"="20220-297",
+    "telnumber"="3147-3000"
+  }
+}
