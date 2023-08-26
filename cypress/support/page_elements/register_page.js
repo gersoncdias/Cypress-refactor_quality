@@ -1,4 +1,4 @@
-class loginPage {
+class registerPage {
     constructor() {
       this.userName = '[data-qa="signup-name"]'
       this.emailAdress = '[data-qa="signup-email"]'
@@ -17,7 +17,11 @@ class loginPage {
       this.inputZipCode ='[data-qa="zipcode"]'
       this.inputMobileNumber ='[data-qa="mobile_number"]'
       this.buttonCreateAccount ='[data-qa="create-account"]'
+      this.txtAcount = ':nth-child(1) > b'
+      this.checkBox = '#id_gender1'
+      this.creaAteccount = '[data-qa="create-account"]'
+      this.mesgCreated = '.col-sm-9'
     }
 }
 
-module.exports = loginPage
+module.exports = registerPage

@@ -6,5 +6,10 @@ module.exports = defineConfig({
   },
   fixturesFolder: false,
   video: false,
-  pageLoadTimeout: 220000,
+
+  env: {
+    environment: "hml_usa",
+    url: "https://automationexercise.com/login"
+  },
+
 });

@@ -1,11 +1,12 @@
 import {
   faker
 } from '@faker-js/faker';
-const nomeCompleto = `${faker.name.firstName()} ${faker.name.lastName()}`
-const email = Cypress.env("inputEmail")
+const nomeCompleto = `${faker.name.firstName()} ${faker.name.lastName()}`;
 import dataLogin from '../../config/hml.json';
 const loginPage = require('../page_elements/login_page')
 const loginPg = new loginPage()
+const registerPage = require('../page_elements/login_page')
+const registerPg = new registerPage()
 
 
 Cypress.Commands.add('login', () => {
