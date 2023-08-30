@@ -1,22 +1,22 @@
 {
   "env":
   {
-      "fullname": "Gerson Costa Dias",
-      "firstName": "Gerson",
-      "lastName": "Dias",
-      "inputEmail": "gerson.dias@qualiahoo.com.br",
-      "correctEmail": "gerson.dias@quity.com",
-      "inputPassword": "gersonQA",
-      "incorrectPassword": "passwordIncorrect@123{enter}",
-      "inputDay": "9",
-      "selectMonth": "7",
-      "selectYear": "1982",
-      "company": "Quality Digital",
-      "adresscompany": "Avenida Oscar Niemeyer",
-      "country": "Canada",
-      "State": "Rio de Janeiro",
-      "city": "Rio de Janeiro",
-      "zipCzde": "20220-297",
-      "telnumber": "3147-3000"
+    "fullname": "Gerson Costa Dias",
+    "firstName": "Gerson",
+    "lastName": "Dias",
+    "inputEmail": "gerson.dias@qualiahoo.com.br",
+    "incorrectEmail": "gerson.dias@quity",
+    "inputPassword": "gersonQA",
+    "incorrectPassword": "passwordIncorrect@123{enter}",
+    "inputDay": "9",
+    "selectMonth": "7",
+    "selectYear": "1982",
+    "company": "Quality Digital",
+    "adresscompany": "Avenida Oscar Niemeyer",
+    "country": "Canada",
+    "State": "Rio de Janeiro",
+    "city": "Rio de Janeiro",
+    "zipCzde": "20220-297",
+    "telnumber": "3147-3000"
   }
 }

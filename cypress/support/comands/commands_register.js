@@ -1,6 +1,4 @@
-import {
-  faker
-} from '@faker-js/faker';
+import {faker} from '@faker-js/faker';
 const email = faker.internet.email()
 const loginPage = require('../page_elements/login_page')
 const loginPg = new loginPage()
@@ -13,38 +11,35 @@ if (Cypress.env('environment') === 'hml') {
   dataLogin = require('../../config/hml_usa.json');
 }
 
-
-
 Cypress.Commands.add('register', () => {
 
-    cy.get(loginPg.txt_titulo)
-      .should('exist')
-      .should('be.visible')
-      .should('contains.text', 'Login to your account')
+  cy.get(loginPg.txt_titulo)
+    .should('exist')
+    .should('be.visible')
+    .should('contains.text', 'Login to your account')
 
-    cy.get(registerPg.userName)
-      .should('exist')
-      .should('be.visible')
-      .type(dataLogin.env.fullname)
-      
-    cy.get(registerPg.emailAdress)
-      .should('exist')
-      .should('be.visible')
-      .type(email)
+  cy.get(registerPg.userName)
+    .should('exist')
+    .should('be.visible')
+    .type(dataLogin.env.fullname)
+    
+  cy.get(registerPg.emailAdress)
+    .should('exist')
+    .should('be.visible')
+    .type(email)
 
-    cy.get(registerPg.buttonSignup)
-      .should('exist')
-      .should('be.visible')
-      .click()
-
+  cy.get(registerPg.buttonSignup)
+    .should('exist')
+    .should('be.visible')
+    .click()
 })
 
 Cypress.Commands.add('input_form', () => {
 
   cy.get(registerPg.txtAcount)
-  .should('exist')
-  .should('be.visible')
-  .should('contains.text', 'Enter Account Information')
+    .should('exist')
+    .should('be.visible')
+    .should('contains.text', 'Enter Account Information')
 
   cy.get(registerPg.checkBox)
     .should('exist')
@@ -127,11 +122,7 @@ Cypress.Commands.add('input_form', () => {
     .should('be.equal', 'https://automationexercise.com/account_created')
 
    cy.get(registerPg.mesgCreated)
-   .should('exist')
-   .should('be.visible')
-   .should('contains.text', 'Congratulations! Your new account has been successfully created!')
-
-    
-
-
+     .should('exist')
+     .should('be.visible')
+     .should('contains.text', 'Congratulations! Your new account has been successfully created!')
 })

@@ -1,10 +1,11 @@
 {
-  "env":{
+  "env":
+  {
     "fullname": "John Doe",
     "firstName": "John",
     "lastName": "Doe",
     "inputEmail": "john.doe@qualahoo.com.br",
-    "icorrectEmail": "john.does@qualit",
+    "incorrectEmail": "john.does@quality",
     "inputPassword": "gersonQA",
     "incorrectPassword": "passwordIncorrect@123{enter}",
     "inputDay": "9",

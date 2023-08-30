@@ -1,15 +1,11 @@
-const { defineConfig } = require("cypress");
-
-module.exports = defineConfig({
+module.exports = {
   e2e: {
     specPattern: 'cypress/e2e/**/*.{js,jsx,ts,tsx}',
   },
   fixturesFolder: false,
   video: false,
-
   env: {
-    environment: "hml_usa",
+    environment: "hml",
     url: "https://automationexercise.com/login"
   },
-
-});
+};
