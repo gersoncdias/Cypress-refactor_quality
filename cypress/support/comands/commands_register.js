@@ -49,7 +49,7 @@ Cypress.Commands.add('input_form', () => {
   cy.get(registerPg.inputPassword)
     .should('exist')
     .should('be.visible')
-    .type(dataLogin.env.inputPassword)
+    .type(dataLogin.env.inputPassword, { log: false })
     
   cy.get(registerPg.selectDay)
     .should('exist')

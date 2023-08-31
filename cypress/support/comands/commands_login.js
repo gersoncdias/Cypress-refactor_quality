@@ -17,7 +17,7 @@ Cypress.Commands.add('login', () => {
   cy.get(loginPg.inputPassword)
     .should('exist')
     .should('be.visible')
-    .type(dataLogin.env.inputPassword)
+    .type(dataLogin.env.inputPassword, { log: false })
 
   cy.get(loginPg.btnLogin)
     .should('exist')
@@ -45,7 +45,7 @@ Cypress.Commands.add('login_invalido', () => {
   cy.get(loginPg.inputPassword)
     .should('exist')
     .should('be.visible')
-    .type(dataLogin.env.incorrectPassword)
+    .type(dataLogin.env.incorrectPassword, { log: false })
 
   cy.get(loginPg.btnLogin)
     .should('exist')
