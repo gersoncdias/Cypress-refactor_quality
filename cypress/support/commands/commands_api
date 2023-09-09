@@ -1,0 +1,24 @@
+
+const url_api = Cypress.env("apiUrl");
+
+Cypress.Commands.add('getProductsList', () => {
+  cy.api({
+    method: 'GET',
+   url: `${url_api}/productsList`,
+    failOnStatusCode: false,
+    headers: {
+      accept: "application/json"
+    }
+  });
+});
+
+Cypress.Commands.add('getBrandsList', () => {
+    cy.request({
+      method: 'GET',
+     url: `${url_api}/brandsList`,
+      failOnStatusCode: false,
+      headers: {
+        accept: "application/json"
+      }
+    });
+  });

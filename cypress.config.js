@@ -7,6 +7,7 @@ module.exports = {
   video: false,
   env: {
     environment: "hml",
-    url: "https://automationexercise.com/login"
+    url:     "https://automationexercise.com/login",
+    apiUrl : "https://automationexercise.com/api"
   },
 };

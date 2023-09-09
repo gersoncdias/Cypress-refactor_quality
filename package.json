@@ -5,6 +5,16 @@
   },
   "dependencies": {
     "@faker-js/faker": "^7.6.0",
+    "cypress-plugin-api": "^2.11.1",
     "faker": "^6.6.6"
+  },
+  "scripts": {
+    "test_gui": "npx cypress run --spec cypress/e2e/GUI/*.spec.js",
+    "test_api": "npx cypress run --spec cypress/e2e/api/*.spec.js",
+    "test_browsers": "npx cypress run --browser firefox --headless && npx cypress run --browser chrome --headless",
+    "clean_reports": "rm -rf cypress/reports && rm -rf results.json",
+    "clean_screenshots": "rm -rf cypress/screenshots",
+    "clean_videos": "rm -rf cypress/videos",
+    "clean_all": "npm run clean_reports && npm run clean_screenshots && npm run clean_videos && npm run clean_downloads"
   }
 }
